@@ -3,9 +3,9 @@
 Run **[OmniVoice](https://github.com/k2-fsa/OmniVoice)** (600+ language zero-shot voice cloning TTS) on Google Colab
 with a full Gradio web interface — Voice Clone, Voice Design, and SRT subtitle generation.
 
-**এই রিপো কোনো ফর্ক না** — সম্পূর্ণ স্বনির্ভর (self-contained)। `omnivoice` মডেল প্যাকেজ সরাসরি PyPI থেকে
-ইনস্টল হয়; UI ও subtitle কোড এই রিপোর নিজস্ব ফাইল থেকে আসে, তাই কোনো তৃতীয় পক্ষের রিপো ডিলিট/প্রাইভেট হয়ে গেলেও
-এটা ভেঙে পড়বে না।
+**This repo is not a fork** — it's fully self-contained. The `omnivoice` model package is installed directly from
+PyPI, and the UI/subtitle code lives in this repo's own files, so it won't break if some third-party repo gets
+deleted or made private.
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pabitra-senpai/omnivoice-colab/blob/main/OmniVoice_Colab.ipynb)
 
