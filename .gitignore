@@ -1,0 +1,22 @@
+# Generated audio / subtitles / model caches
+*.wav
+*.mp3
+*.flac
+Omni_Audio/
+generated_subtitle/
+subtitle_audio/
+OmniVoice_Model/
+checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db

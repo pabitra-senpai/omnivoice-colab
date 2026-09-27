@@ -1,0 +1,12 @@
+# Colab already ships PyTorch + CUDA, so torch/torchaudio are NOT listed here.
+# omnivoice pulls in its own core deps automatically (transformers, accelerate,
+# pydub, gradio, tensorboardX, webdataset, numpy, soundfile, librosa).
+omnivoice
+transformers==5.3
+gradio==5.50.0
+
+# Subtitle (SRT) generation
+pysrt>=1.1.2
+sentencex>=1.0.17
+faster-whisper==1.1.1
+ctranslate2==4.6.0
