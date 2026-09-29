@@ -256,7 +256,15 @@ def _gen_core(
 
     try:
         audio = model.generate(**kw)
+    except torch.cuda.OutOfMemoryError as e:
+        torch.cuda.empty_cache()
+        return None, (
+            f"GPU memory full (OOM) at {int(num_step or 32)} inference steps. "
+            f"Try lowering Inference Steps (e.g. 16), or Runtime → Restart session and start again.\n"
+            f"Details: {e}"
+        )
     except Exception as e:
+        torch.cuda.empty_cache()
         return None, f"Error: {type(e).__name__}: {e}"
 
     # waveform = audio[0].squeeze(0).numpy()
